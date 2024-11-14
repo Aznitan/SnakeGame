@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameScreen">
+
+    <!-- Game Display -->
+    <SurfaceView
+        android:id="@+id/gameSurfaceView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/controllerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Controller Buttons -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/controllerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gameSurfaceView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Up Button -->
+        <Button
+            android:id="@+id/btnUp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="↑"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btnLeft" />
+
+        <!-- Left Button -->
+        <Button
+            android:id="@+id/btnLeft"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="←"
+            app:layout_constraintTop_toBottomOf="@+id/btnUp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnRight" />
+
+        <!-- Down Button -->
+        <Button
+            android:id="@+id/btnDown"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="↓"
+            app:layout_constraintTop_toBottomOf="@+id/btnLeft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Right Button -->
+        <Button
+            android:id="@+id/btnRight"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="→"
+            app:layout_constraintTop_toBottomOf="@+id/btnUp"
+            app:layout_constraintStart_toEndOf="@+id/btnLeft"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
