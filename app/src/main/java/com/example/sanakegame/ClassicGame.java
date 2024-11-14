@@ -15,17 +15,14 @@ public class ClassicGame extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamescreen);
 
-        // Initialize the GameSurface
         gameSurface = findViewById(R.id.gameSurfaceView);
-        gameSurface.setGameMode("classic"); // Set the mode for classic gameplay
+        gameSurface.setGameMode("classic");
 
-        // Initialize directional buttons
         btnUp = findViewById(R.id.btnUp);
         btnDown = findViewById(R.id.btnDown);
         btnLeft = findViewById(R.id.btnLeft);
         btnRight = findViewById(R.id.btnRight);
 
-        // Set up button listeners for direction control
         btnUp.setOnClickListener(v -> gameSurface.setDirection("UP"));
         btnDown.setOnClickListener(v -> gameSurface.setDirection("DOWN"));
         btnLeft.setOnClickListener(v -> gameSurface.setDirection("LEFT"));

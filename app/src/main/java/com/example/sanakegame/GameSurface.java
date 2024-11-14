@@ -77,7 +77,7 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        // Initialize snake at the center
+
         snakeBody.clear();
         int startX = getWidth() / 2;
         int startY = getHeight() / 2;
@@ -112,15 +112,15 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
             Canvas canvas = getHolder().lockCanvas();
             if (canvas != null) {
                 try {
-                    update(); // Update game state
-                    drawGame(canvas); // Redraw the game
+                    update();
+                    drawGame(canvas);
                 } finally {
                     getHolder().unlockCanvasAndPost(canvas);
                 }
             }
 
             try {
-                Thread.sleep(speed); // Control frame rate
+                Thread.sleep(speed);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -128,7 +128,7 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
     }
 
     private void update() {
-        // (Logic for updating the snake, food, and collision detection)
+        // ( snake, food, and collision detection)
     }
 
     private void spawnFood() {
@@ -152,7 +152,7 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback, 
     }
 
     public void setDirection(String newDirection) {
-        // Prevent reversing direction
+
         if ((direction.equals("UP") && newDirection.equals("DOWN")) ||
                 (direction.equals("DOWN") && newDirection.equals("UP")) ||
                 (direction.equals("LEFT") && newDirection.equals("RIGHT")) ||
