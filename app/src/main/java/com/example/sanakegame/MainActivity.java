@@ -29,12 +29,11 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Set up the button to launch the game
         Button buttonClassicGame = findViewById(R.id.buttonClassicGame);
         buttonClassicGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, GameScreen.class);
+                Intent intent = new Intent(MainActivity.this, ClassicGame.class);
                 startActivity(intent);
             }
         });

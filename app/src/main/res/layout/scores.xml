@@ -7,7 +7,7 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scores for the Snake Game"
+        android:text="@string/scores_for_the_snake_game_n_this_scores_will_store_the_name_and_socre_and_saved_n_on_online_or_local_db"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

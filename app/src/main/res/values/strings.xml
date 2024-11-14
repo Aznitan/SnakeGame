@@ -5,4 +5,12 @@
     <string name="settings">Settings</string>
     <string name="classic_game">Classic Game</string>
     <string name="score_game">Score Game</string>
+    <string name="up">↑</string>
+    <string name="left">←</string>
+    <string name="down">↓</string>
+    <string name="right">→</string>
+    <string name="this_project_is_done_for_n_itec_4550_course_project">This project is done for \n ITEC 4550 Course Project</string>
+    <string name="by_luis_fabela">by Luis Fabela</string>
+    <string name="scores_for_the_snake_game_n_this_scores_will_store_the_name_and_socre_and_saved_n_on_online_or_local_db">Scores for the Snake Game \n This Scores will store the name and socre and saved\n on online or local DB</string>
+    <string name="info">settings for the snake game \n such as changing snake color or food colors or maybe speed of the snake for more dificulty</string>
 </resources>
