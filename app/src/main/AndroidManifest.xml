@@ -38,6 +38,10 @@
             android:exported="false"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".Help"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+        </activity>
 
 
 

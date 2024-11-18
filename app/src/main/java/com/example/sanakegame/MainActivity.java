@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Settings.class);
             startActivity(intent);
             return true;
+        }else if (item.getItemId() == R.id.help) {
+            Intent intent = new Intent(this, Help.class);
+            startActivity(intent);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }

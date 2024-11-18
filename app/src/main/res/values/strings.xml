@@ -13,4 +13,6 @@
     <string name="by_luis_fabela">by Luis Fabela</string>
     <string name="scores_for_the_snake_game_n_this_scores_will_store_the_name_and_socre_and_saved_n_on_online_or_local_db">Scores for the Snake Game \n This Scores will store the name and socre and saved\n on online or local DB</string>
     <string name="info">settings for the snake game \n such as changing snake color or food colors or maybe speed of the snake for more dificulty</string>
+    <string name="help">Help</string>
+    <string name="helpinfo">This Game has 2 versions of how to play\n Classic: Just like old times classsic Snake game trying to get\n the snake as big as possible by not eating yourself \nyou may use the\n buttons for movement.\n Score Game: Try to bet yourself or others by having\n the greates score possible until the snake is eaten</string>
 </resources>
